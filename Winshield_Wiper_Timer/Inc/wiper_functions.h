@@ -1,0 +1,4 @@
+#ifndef __WIPER_FUNCTIONS_SEEN
+#define __WIPER_FUNCTIONS_SEEN
+
+#endif

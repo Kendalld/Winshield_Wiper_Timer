@@ -39,9 +39,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f4xx_hal.h"
-
 /* USER CODE BEGIN Includes */
-
+#include "wiper_functions.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -59,9 +58,7 @@ static void MX_GPIO_Init(void);
 /* Private function prototypes -----------------------------------------------*/
 
 //***Defining for readablility
-#define LED_ON HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET)
-#define LED_OFF HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET)
-#define Button_Pressed (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)) == 0
+
 
 /* USER CODE END PFP */
 
@@ -103,15 +100,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  /* USER CODE END WHILE */
 //Read a pin from the push button, write signal to LED
+On_When_Pushed(void);
+
+  /* USER CODE END WHILE */
+
     
-    if(Button_Pressed){
-      LED_ON;
-    } else {
-      LED_OFF;
-    }
-    
+
     
   /* USER CODE BEGIN 3 */
 
