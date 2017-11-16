@@ -106,6 +106,7 @@
             <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h</file>
             <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h</file>
             <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h</file>
+            <file>$PROJ_DIR$\..\Inc\wiper_functions.h</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
@@ -506,19 +507,15 @@
                     <name>BICOMP</name>
                     <file> 53</file>
                 </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 91 83 84 76 95 93 89 77 79 99 74 78 92 80 81 73 82 85 96 97 98 86 90 75 87 100 88 94 68 69 67 64 66 71 65 72</file>
+                    <file> 89 95 84 85 101 78 92 74 80 76 81 73 82 96 77 93 79 83 99 91 97 98 86 90 75 87 100 88 94 68 69 67 64 66 71 65 72</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 89 74 78 97 95 77 68 69 67 76 84 81 73 83 79 66 82 64 80 93 94 92 71 88 98 99 86 85 90 75 91 65 87 72 100 96</file>
+                    <file> 89 74 78 97 95 77 68 69 67 76 84 81 73 83 79 66 82 64 80 93 94 92 71 88 98 99 86 85 90 75 91 65 87 72 100 96 101</file>
                 </tool>
             </inputs>
         </file>

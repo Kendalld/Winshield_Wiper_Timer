@@ -42,6 +42,7 @@
 /* USER CODE BEGIN Includes */
 
 // Test where new headers will go 
+#include "wiper_functions.h"
 
 /* USER CODE END Includes */
 
@@ -50,9 +51,7 @@ TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-#define LED_ON HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET)
-#define LED_OFF HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET)
-#define Button_Pressed (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)) == 0
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -61,6 +60,7 @@ static void MX_GPIO_Init(void);
 static void MX_TIM2_Init(void);
 
 /* USER CODE BEGIN PFP */
+void On_When_Pushed(void);
 /* Private function prototypes -----------------------------------------------*/
 
 /* USER CODE END PFP */
@@ -105,18 +105,12 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
-
   /* USER CODE BEGIN 3 */
-    if(Button_Pressed){
-      LED_ON;
-    } else {
-      LED_OFF;
-    }
-  }
+    On_When_Pushed();
+
   /* USER CODE END 3 */
-
 }
-
+}
 /** System Clock Configuration
 */
 void SystemClock_Config(void)
