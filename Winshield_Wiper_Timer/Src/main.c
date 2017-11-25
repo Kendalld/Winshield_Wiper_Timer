@@ -73,7 +73,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  uint32_t blink_time = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -106,8 +106,14 @@ int main(void)
   {
   /* USER CODE END WHILE */
   /* USER CODE BEGIN 3 */
-    On_When_Pushed();
-
+//blink_time defined above
+    if (Button_Pressed){
+      blink_time = Get_Time();
+    }
+    else{
+      Blink_Timed(blink_time);
+    }
+  // On_When_Pushed();
   /* USER CODE END 3 */
 }
 }
