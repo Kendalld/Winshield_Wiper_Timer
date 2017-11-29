@@ -1,3 +1,5 @@
+#include "wiper_functions.h"
+
 //This program will have the dev borad LED turn on 
 //when the Dev board button is pressed
 
