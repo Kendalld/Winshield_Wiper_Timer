@@ -43,6 +43,7 @@
 
 // Test where new headers will go 
 #include "wiper_functions.h"
+#include "wiper_functions.c"
 
 /* USER CODE END Includes */
 

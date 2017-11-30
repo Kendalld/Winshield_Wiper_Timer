@@ -1,5 +1,6 @@
 //This program will have the dev borad LED turn on 
 //when the Dev board button is pressed
+#include "wiper_functions.h"
 
 #define LED_ON HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET)
 #define LED_OFF HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET)
